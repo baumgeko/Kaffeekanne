@@ -1,0 +1,23 @@
+/* Vorheriger CSS-Code bleibt unverändert */
+
+/* Aktualisierte Regel für die Kaffeekanne */
+.kaffeekanne {
+    position: relative;
+    width: 200px; /* Breite anpassen, falls erforderlich */
+    height: 300px; /* Höhe anpassen, falls erforderlich */
+    margin-top: 50px;
+    overflow: hidden; /* Überlauf verbergen, um den Füllstand innerhalb der Kanne zu halten */
+}
+
+/* Aktualisierte Regel für den Füllstand mit linearem Farbverlauf von Blau zu Rot */
+.fuellstand {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: -1; /* Hinter die Kanne setzen */
+    background: linear-gradient(to top, blue, red); /* Linearer Farbverlauf von Blau zu Rot */
+    transition: height 0.5s ease, background 0.5s ease; /* Übergangseffekte für Höhe und Hintergrundfarbe */
+}
